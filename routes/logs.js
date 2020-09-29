@@ -3,6 +3,8 @@ var fs = require("fs");
 var path = require("path");
 var router = express.Router();
 const readline = require("readline");
+const cors = require("cors");
+
 // assuming that the file is static,
 // I will log some statistical information for the file.
 // to help improve the speed of fetching the file in the future.
@@ -64,7 +66,10 @@ GET logs listing.
 @query start Number Line number to read from
 @query end Number Line number to read up to,
 */
-router.get("/", function (req, res, next) {
+const corsOptions = {
+  origin: "http://localhost"
+};
+router.get("/", cors(corsOptions), function (req, res, next) {
   const { start, end } = req.query;
   if (!start || !end) {
     res.status(500);
