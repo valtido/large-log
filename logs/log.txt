@@ -1,0 +1,6 @@
+2016-09-20 16:23:10,994 INFO Some info message
+2016-09-20 16:23:11,994 INFO Some other info message
+2016-09-20 16:23:12,994 WARNING Some warning message
+2016-09-20 16:23:13,994 WARNING Some other warning message
+2016-09-20 16:23:14,994 ERROR Some error message
+2016-09-20 16:23:15,994 ERROR Some other error message
