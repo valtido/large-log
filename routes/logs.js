@@ -3,7 +3,6 @@ var fs = require("fs");
 var path = require("path");
 var router = express.Router();
 const readline = require("readline");
-const logReg = /^(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}),994\s(INFO|ERROR|WARNING)\s(.*)$/;
 // assuming that the file is static,
 // I will log some statistical information for the file.
 // to help improve the speed of fetching the file in the future.
